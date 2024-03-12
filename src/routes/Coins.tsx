@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useQuery } from "react-query";
@@ -18,10 +18,11 @@ const Header = styled.header`
 const CoinsList = styled.ul``;
 const Coin = styled.li`
   background-color: white;
-  color: ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.textColor};
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 10px;
+  border: 1px solid white;
   a {
     display: flex;
     align-items: center;
@@ -77,6 +78,7 @@ export default function Coins() {
     <Container>
       <Header>
         <Title>코인이당</Title>
+        <button>Toggle to dark Mode</button>
       </Header>
       {isLoading ? (
         <Loader>Loading...</Loader>
