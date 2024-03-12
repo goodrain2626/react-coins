@@ -1,5 +1,6 @@
-import React from "react";
+import React from 'react';
 
 export default function Price() {
-  return <h1>Price</h1>;
+  return  <h1>Price</h1>
 }
+
